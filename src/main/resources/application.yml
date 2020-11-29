@@ -1,2 +1,15 @@
 server:
-  port: 8080
+  port: 8081
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+person:
+  map:
+    key1: testmap
+  age: ${random.int(5,100)}
+  name: ${random.uuid}
+  birthday: 2020/11/29
